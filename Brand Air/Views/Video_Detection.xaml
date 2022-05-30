@@ -1,0 +1,89 @@
+﻿<UserControl x:Class="Brand_Air.Views.Video_Detection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+             xmlns:local="clr-namespace:Brand_Air.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="1100">
+   
+   <Grid HorizontalAlignment="Center" Width="1100" Height="Auto" Margin="10,10,10,9.6">
+        <TextBlock HorizontalAlignment="Center" FontFamily="Champagne &amp; Limousines" Height="17" Margin="31,0,10,-0.2" VerticalAlignment="Top" Width="109"><Run FontWeight="Bold" Text="System Logs" TextDecorations="Underline"/></TextBlock>
+        <Border BorderBrush="Gray" BorderThickness="2" CornerRadius="28" Margin="10,23,10,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <Grid Grid.Column="1">
+                    <TabControl Margin="10,10,9.8,9.6">
+                        <TabItem Header="Log 1">
+                            <StackPanel x:Name="logR1">
+                                <TextBlock>Extracted Frame</TextBlock>
+                                <WindowsFormsHost Width="850" Height="450" VerticalAlignment="Top">
+                                    <wf:PictureBox x:Name="pbFrame"/>
+                                </WindowsFormsHost>
+                            </StackPanel>
+                        </TabItem>
+
+                        <TabItem Header="Log 2">
+                            <StackPanel x:Name="logR2">
+                                <TextBlock>Blob Byte</TextBlock>
+                                <WindowsFormsHost Width="850" Height="450" VerticalAlignment="Top">
+                                    <wf:PictureBox x:Name="pbBlob"/>
+                                </WindowsFormsHost>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Log 3" >
+                            <StackPanel x:Name="logR3">
+                                <TextBlock>Response</TextBlock>
+                                <TextBlock Name="tbResponse"></TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Log 4" >
+                            <StackPanel x:Name="logR4">
+                                <TextBlock>Advertisment Response</TextBlock>
+                                <TextBlock Name="pb_video_frame"></TextBlock>
+                                <!--<WindowsFormsHost Width="850" Height="450" VerticalAlignment="Top">
+                                    <wf:PictureBox x:Name="pb_video_frame"/>
+                                </WindowsFormsHost>-->
+                                <!--<WindowsFormsHost Width="700" Height="400" VerticalAlignment="Top">
+                                    <wf:PictureBox x:Name="pb_ad_Detected"/>
+                                </WindowsFormsHost>-->
+                                
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Log 5" >
+                            <StackPanel x:Name="logR5">
+                                <TextBlock>Detected Frame</TextBlock>
+                                <WindowsFormsHost Width="850" Height="450" VerticalAlignment="Top">
+                                    <wf:PictureBox x:Name="pbDetected"/>
+                                </WindowsFormsHost>
+                            </StackPanel>
+                        </TabItem>
+                        
+                    </TabControl>
+                </Grid>
+                <Grid Grid.Column="0">
+                    
+                        <TabControl Margin="10,10,9.8,9.4" Name="mainTabControl">
+                      
+                            <TabItem Header="Live Log Viewer" Name="logViewerTab" >
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden">
+
+                                <StackPanel Width="150" Name="sp" >
+                              
+                            </StackPanel>
+                            </ScrollViewer>
+                        </TabItem>
+                       
+                    </TabControl>
+                    
+
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

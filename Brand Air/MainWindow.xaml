@@ -1,0 +1,24 @@
+﻿<Window x:Class="Brand_Air.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:local="clr-namespace:Brand_Air"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <WindowsFormsHost Height="245" Margin="68,164,53,0" VerticalAlignment="Top">
+            <wf:PictureBox x:Name="pbframe" Height="400" Width="700">
+            </wf:PictureBox>
+        </WindowsFormsHost>
+        <Button Content="Select Video" Name="btnSelVideo" HorizontalAlignment="Left" Margin="639,50,0,0" VerticalAlignment="Top" Width="75" Click="btnSelVideo_Click"/>
+        <Button Content="Detect Image" Name="btnDetect" HorizontalAlignment="Left" Margin="639,75,0,0" VerticalAlignment="Top" Width="75" Click="btnDetect_Click"/>
+        <Button Content="Detect Video" Name="btnDetectVideo" HorizontalAlignment="Left" Margin="639,100,0,0" VerticalAlignment="Top" Width="75" Click="btnDetectVideo_Click"/>
+        <Button Content="Find Keywords" Name="btnFind" HorizontalAlignment="Left" Margin="639,125,0,0" VerticalAlignment="Top" Width="75" Click="btnFind_Click"/>
+        <TextBox Name="tbVideoPath" HorizontalAlignment="Left" Height="23" Margin="179,70,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tbWord" HorizontalAlignment="Left" Height="23" Margin="179,101,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Path" HorizontalAlignment="Left" Margin="101,68,0,0" VerticalAlignment="Top"/>
+        <Label Content="Keywords" HorizontalAlignment="Left" Margin="101,94,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

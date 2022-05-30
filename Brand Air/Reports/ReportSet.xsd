@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportSet" targetNamespace="http://tempuri.org/ReportSet.xsd" xmlns:mstns="http://tempuri.org/ReportSet.xsd" xmlns="http://tempuri.org/ReportSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportSet" msprop:Generator_UserDSName="ReportSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LogoDataTable" msprop:Generator_TableClassName="LogoDataTableDataTable" msprop:Generator_TableVarName="tableLogoDataTable" msprop:Generator_TablePropName="LogoDataTable" msprop:Generator_RowDeletingName="LogoDataTableRowDeleting" msprop:Generator_RowChangingName="LogoDataTableRowChanging" msprop:Generator_RowEvHandlerName="LogoDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="LogoDataTableRowDeleted" msprop:Generator_UserTableName="LogoDataTable" msprop:Generator_RowChangedName="LogoDataTableRowChanged" msprop:Generator_RowEvArgName="LogoDataTableRowChangeEvent" msprop:Generator_RowClassName="LogoDataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Label" msprop:Generator_ColumnVarNameInTable="columnLabel" msprop:Generator_ColumnPropNameInRow="Label" msprop:Generator_ColumnPropNameInTable="LabelColumn" msprop:Generator_UserColumnName="Label" type="xs:string" minOccurs="0" />
+              <xs:element name="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnPropNameInTable="TimeColumn" msprop:Generator_UserColumnName="Time" type="xs:string" minOccurs="0" />
+              <xs:element name="FPS" msprop:Generator_ColumnVarNameInTable="columnFPS" msprop:Generator_ColumnPropNameInRow="FPS" msprop:Generator_ColumnPropNameInTable="FPSColumn" msprop:Generator_UserColumnName="FPS" type="xs:string" minOccurs="0" />
+              <xs:element name="Count" msprop:Generator_ColumnVarNameInTable="columnCount" msprop:Generator_ColumnPropNameInRow="Count" msprop:Generator_ColumnPropNameInTable="CountColumn" msprop:Generator_UserColumnName="Count" type="xs:string" minOccurs="0" />
+              <xs:element name="CPF" msprop:Generator_ColumnVarNameInTable="columnCPF" msprop:Generator_ColumnPropNameInRow="CPF" msprop:Generator_ColumnPropNameInTable="CPFColumn" msprop:Generator_UserColumnName="CPF" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdvertisementDataTable" msprop:Generator_TableClassName="AdvertisementDataTableDataTable" msprop:Generator_TableVarName="tableAdvertisementDataTable" msprop:Generator_TablePropName="AdvertisementDataTable" msprop:Generator_RowDeletingName="AdvertisementDataTableRowDeleting" msprop:Generator_RowChangingName="AdvertisementDataTableRowChanging" msprop:Generator_RowEvHandlerName="AdvertisementDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="AdvertisementDataTableRowDeleted" msprop:Generator_UserTableName="AdvertisementDataTable" msprop:Generator_RowChangedName="AdvertisementDataTableRowChanged" msprop:Generator_RowEvArgName="AdvertisementDataTableRowChangeEvent" msprop:Generator_RowClassName="AdvertisementDataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Advertisement" msprop:Generator_ColumnVarNameInTable="columnAdvertisement" msprop:Generator_ColumnPropNameInRow="Advertisement" msprop:Generator_ColumnPropNameInTable="AdvertisementColumn" msprop:Generator_UserColumnName="Advertisement" type="xs:string" minOccurs="0" />
+              <xs:element name="Timestamp" msprop:Generator_ColumnVarNameInTable="columnTimestamp" msprop:Generator_ColumnPropNameInRow="Timestamp" msprop:Generator_ColumnPropNameInTable="TimestampColumn" msprop:Generator_UserColumnName="Timestamp" type="xs:string" minOccurs="0" />
+              <xs:element name="Frames" msprop:Generator_ColumnVarNameInTable="columnFrames" msprop:Generator_ColumnPropNameInRow="Frames" msprop:Generator_ColumnPropNameInTable="FramesColumn" msprop:Generator_UserColumnName="Frames" type="xs:string" minOccurs="0" />
+              <xs:element name="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnPropNameInTable="TimeColumn" msprop:Generator_UserColumnName="Time" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="KeywordDataTable" msprop:Generator_TableClassName="KeywordDataTableDataTable" msprop:Generator_TableVarName="tableKeywordDataTable" msprop:Generator_TablePropName="KeywordDataTable" msprop:Generator_RowDeletingName="KeywordDataTableRowDeleting" msprop:Generator_RowChangingName="KeywordDataTableRowChanging" msprop:Generator_RowEvHandlerName="KeywordDataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="KeywordDataTableRowDeleted" msprop:Generator_UserTableName="KeywordDataTable" msprop:Generator_RowChangedName="KeywordDataTableRowChanged" msprop:Generator_RowEvArgName="KeywordDataTableRowChangeEvent" msprop:Generator_RowClassName="KeywordDataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Keyword" msprop:Generator_ColumnVarNameInTable="columnKeyword" msprop:Generator_ColumnPropNameInRow="Keyword" msprop:Generator_ColumnPropNameInTable="KeywordColumn" msprop:Generator_UserColumnName="Keyword" type="xs:string" minOccurs="0" />
+              <xs:element name="Count" msprop:Generator_ColumnVarNameInTable="columnCount" msprop:Generator_ColumnPropNameInRow="Count" msprop:Generator_ColumnPropNameInTable="CountColumn" msprop:Generator_UserColumnName="Count" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
